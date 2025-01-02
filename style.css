@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Audiowide&family=Delicious+Handrawn&family=Indie+Flower&family=Orbitron:wght@400..900&family=Saira+Stencil+One&family=Shadows+Into+Light+Two&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Silkscreen:wght@400;700&family=Sriracha&family=Tangerine:wght@400;700&family=The+Girl+Next+Door&display=swap');
+
+:root {
+    --color-one: #1d1d1d; /* A VOIR */
+    --color-two: #d3d3d3; /* A VOIR */
+    --color-three: #f7f7f7;
+}
+
+body {
+    text-align: center;
+    margin: 0; 
+    margin-top: -3rem;
+    background-color: var(--color-two);
+    color: var(--color-one);
+    font-family: "Delicious Handrawn", serif;
+    font-weight: 200;
+}
+div {
+    padding: 3rem;
+}
+
+.info-game {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "title title"
+    "rules rules"
+    "score moves";
+}
+
+.info-game #rules {
+    grid-area: rules;
+}
+.info-game h1 {
+    grid-area: title;
+}
+
+.info-game #score-p {
+    margin-top: -1rem;
+    grid-area: score;
+}
+
+.info-game #moves-p {
+    margin-top: -1rem;
+    grid-area: moves;
+}
+
+.board {
+    margin-top: -5rem;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "a b c d e f"
+    "g h i j k l";
+    align-items: center;
+}
+
+img {
+    width: 8rem;
+    padding: 2rem;
+}
